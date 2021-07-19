@@ -9,6 +9,7 @@ verify_ssl = true
 flask-mongoengine = "*"
 flask-pymongo = "*"
 flask-login = "*"
+environs = "*"
 
 [requires]
 python_version = "3.7"

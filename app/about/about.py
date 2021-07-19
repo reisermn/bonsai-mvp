@@ -11,7 +11,7 @@ from flask import (
 )
 from flask_login import login_user, logout_user
 from app.extensions import login_manager
-# from app.models import mongo_col_company, mongo_col_user, User, Company
+from app.models import User, Company
 # from .forms import LoginForm, RegisterForm
 
 
@@ -21,10 +21,10 @@ about_bp = Blueprint(
 )
 
 
-# @login_manager.user_loader
-# def load_user(_id):
-#     return User.objects(pk=_id).first()
-#     # return mongo_col_user.find_one({"_id": "user_id"})
+@login_manager.user_loader
+def load_user(_id):
+    return User.objects(pk=_id).first()
+    # return mongo_col_user.find_one({"_id": "user_id"})
 
 
 @about_bp.route("/", methods=["GET", "POST"])
@@ -33,7 +33,7 @@ def home():
 
     return render_template(
         "index.jinja2",
-        page_title="Your Measurement Strategy for DEI",
+        page_title="Bonsai",
     )
 
 

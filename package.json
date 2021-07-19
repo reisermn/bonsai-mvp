@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwind build app/src/style.css -o app/static/style.css"
+    "build:css": "tailwind build -i app/src/style.css -o app/static/style.css"
   },
   "author": "Matt Reiser",
   "license": "MIT",

@@ -55,7 +55,7 @@ env/
 /node_modules/
 
 # webpack-built files
-/virtual_island/static/build/
+/app/static/build/
 
 # Configuration
 .env
