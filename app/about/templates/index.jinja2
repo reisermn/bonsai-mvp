@@ -5,4 +5,57 @@
 {% endblock head %}
 {% block content %}
 
+    <section class=" text-white body-font bg-gray-800">
+        <div class="container flex mx-auto px-5 pt-12">
+            <div class="sm:w-full md:w-1/2 text-left items-start">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4">Your professional financial
+                    management tool</h1>
+                <p class="text-base leading-relaxed mx-auto">Bonsai helps you manage
+                    liquidity, leverage and valuation like a pro - so you can focus on your business.</p>
+                <div>
+                    <a href="{{ url_for('about_bp.register') }}">
+                        <button class="mt-16 bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded-full text-lg">
+                            Sign Up
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="sm:w-full md:w-1/2 text-left pt-20 items-start">
+                <img class="object-contain object-left w-full"
+                     src="{{ url_for('static', filename='img/homepage_isometric.png') }}"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-white body-font bg-gray-800">
+        <div class="container flex mx-auto px-5 pt-12">
+            <div class="w-11/12 text-center mb-20 items-center">
+                <h1 class="sm:text-2xl text-xl font-medium title-font mb-4">Bonsai seamlessly integrates with your
+                    existing financial tools</h1>
+                <p class="text-base leading-relaxed mx-auto mb-8">Accounting tools, POS systems , banks, credit cards,
+                    loans
+                    and more</p>
+                <div class="w-5/6 bg-gray-200 py-10 mx-auto items-center">
+                    <div>
+                        <p class="text-gray-800 text-base leading-relaxed mx-auto mb-8">Some of our most popular institutions
+                            include:</p>
+                        <div class="grid grid-flow-col grid-cols-3 grid-rows-3 gap-4">
+                            <p class="text-gray-800"> logo </p>
+                            <p class="text-gray-800"> logo </p>
+                            <p class="text-gray-800"> logo </p>
+
+                            <p class="text-gray-800"> logo </p>
+                            <p class="text-gray-800"> logo </p>
+                            <p class="text-gray-800"> logo </p>
+
+                            <p class="text-gray-800"> logo </p>
+                            <p class="text-gray-800"> logo </p>
+                            <p class="text-gray-800"> logo </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 {% endblock content %}
